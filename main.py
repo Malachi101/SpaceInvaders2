@@ -34,7 +34,7 @@ bulletImg = pygame.image.load('bullet.png')
 bulletX = 0
 bulletY = 480
 bulletX_change = 0
-bulletY_change = 10
+bulletY_change = 40
 bullet_state = "ready"
 
 def player(x, y):
@@ -106,6 +106,8 @@ while running:
         bulletY -= bulletY_change
 
     player(playerX, playerY)
+    show_score(textX, testY)
     enemy(enemyX, enemyY)
 
     pygame.display.update()
+    
